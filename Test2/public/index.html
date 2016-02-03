@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+		<script src="hello.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link href="styles.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body ng-app="project">
+		<nav class="navbar navbar-inverse navbar-static-top">
+			<h2 id="titu" class="text-center"><span class="glyphicon glyphicon-hdd"></span> Games.com</h2>
+		</nav>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>PlayOnLan!</h1>
+			</div>
+		</div>
+		<div class="container" ng-controller="HelloController">
+			<div class="row">
+				<div class="col-md-4" ng-repeat="x in games">
+					<h2>{{x.id}} - {{x.name}}</h2>
+					<div class="thumbnail"><img ng-src="{{x.imgUrl}}"></div>
+					<p>{{x.shortContent}}</p>
+					<p><a class="btn btn-info" role="button" href="#">Leer m&aacute;s! <span class="glyphicon glyphicon-hand-up"></span></a></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

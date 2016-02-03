@@ -1,0 +1,16 @@
+.navbar {
+	margin-bottom: 0;
+	background-color: gray;
+}
+
+.jumbotron {
+	background-color: bisque;
+}
+
+#titu {
+	color: navajowhite;
+}
+.thumbnail-game {
+	width: 100%;
+    height: 230px;
+}
